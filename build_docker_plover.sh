@@ -1,5 +1,17 @@
 #!/bin/bash
 
+# GitHub ssh keys
+rm -rf ~/.ssh/id_rsa ~/.ssh/id_rsa.pub
+read -p "Enter github email : " email
+echo "Using email $email"
+ssh-keygen -t rsa -b 4096 -C "$email"
+ssh-add ~/.ssh/id_rsa
+pub=`cat ~/.ssh/id_rsa.pub`
+read -p "Enter GitHub username: " githubuser
+echo "Using username $githubuser"
+read -s -p "Enter github password for user $githubuser: " githubpass
+curl -u "$githubuser:$githubpass" -X POST -d "{\"title\":\"`hostname`\",\"key\":\"$pub\"}" https://api.github.com/user/keys
+
 echo "apt update and patch."
 sudo apt-get update
 sudo apt-get upgrade
