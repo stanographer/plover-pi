@@ -28,8 +28,9 @@ sudo apt autoremove
 
 # Copy latest plover repo.
 echo "Copying latest Plover repo."
-cd ~
 git clone git@github.com:openstenoproject/plover.git plover/
+
+# Build Docker image.
 echo "Building Plover Docker image."
 
-docker build --tag plover-pi .
+sudo docker build --tag plover-pi .
