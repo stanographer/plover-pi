@@ -26,10 +26,6 @@ sudo systemctl start docker
 # remove unused stuff.
 sudo apt autoremove
 
-echo "Pulling latest Plover repo."
-cd ~
-git clone git@github.com:openstenoproject/plover.git
-
 echo "Building Plover Docker image."
 
 docker build --tag plover-pi .
