@@ -5,7 +5,7 @@ sudo apt update
 sudo apt install 2to3
 
 # Install PyQt5
-sudo apt install -y pyqt5-dev pyqt5-devtools python-sip
+sudo apt install -y python3-pyqt5 pyqt5-devtools python-sip
 
 # Install pip.
 sudo apt install pipenv
