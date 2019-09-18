@@ -5,15 +5,13 @@ sudo apt update
 sudo apt install 2to3
 
 # Install PyQt5
-sudo apt install pyqt5-dev
-sudo apt install pyqt5-devtools
-sudo apt install python-sip
+sudo apt install -y pyqt5-dev pyqt5-devtools python-sip
 
 # Install pip.
 sudo apt install pipenv
 
 # Clone latest Plover repo.
-git clone git@github.com:openstenoproject/plover.git
+git clone git@github.com:openstenoproject/plover.git plover/
 
 # Get into plover.
 cd plover
