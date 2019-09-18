@@ -19,6 +19,8 @@ sudo python3 configure.py --sip-module PyQt5.sip
 sudo make
 sudo make install
 
+cd ~/plover-pi
+
 # Clone latest Plover repo.
 git clone git@github.com:openstenoproject/plover.git plover/
 
