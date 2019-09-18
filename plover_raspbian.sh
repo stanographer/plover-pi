@@ -12,10 +12,10 @@ sudo apt install pipenv
 
 # Make SIP.
 cd /usr/src
-sudo wget https://www.riverbankcomputing.com/static/Downloads/sip/sip-4.19.14.tar.gz
-sudo tar xzf sip-4.19.14.tar.gz
-cd sip-4.19.14
-sudo python3.6 configure.py --sip-module PyQt5.sip
+sudo wget https://www.riverbankcomputing.com/static/Downloads/sip/4.19.13/sip-4.19.13.tar.gz
+sudo tar xzf sip-4.19.13.tar.gz
+cd sip-4.19.13
+sudo python3 configure.py --sip-module PyQt5.sip
 sudo make
 sudo make install
 
