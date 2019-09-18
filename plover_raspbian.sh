@@ -10,6 +10,9 @@ sudo apt install pipenv
 # Clone latest Plover repo.
 git clone git@github.com:openstenoproject/plover.git
 
+# Get into plover.
+cd plover
+
 # Install Plover.
 pip3 install -r requirements.txt
 
