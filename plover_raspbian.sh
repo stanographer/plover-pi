@@ -5,7 +5,7 @@ sudo apt update
 sudo apt install 2to3
 
 # Install PyQt5
-sudo apt install -y python3-babel qt5-qmake
+sudo apt install -y python3-babel qt5-qmake qt5-default
 
 # Install pip.
 sudo apt install pipenv
