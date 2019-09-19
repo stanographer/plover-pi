@@ -12,11 +12,11 @@ sudo apt install pipenv
 
 # Make PyQt5 and SIP.
 cd /tmp
-sudo wget https://www.riverbankcomputing.com/static/Downloads/sip/4.19.13/sip-4.19.13.tar.gz
+sudo wget https://www.riverbankcomputing.com/static/Downloads/sip/4.19.19/sip-4.19.19.tar.gz
 sudo wget https://www.riverbankcomputing.com/static/Downloads/PyQt5/5.13.1/PyQt5_gpl-5.13.1.tar.gz
 
-sudo tar xzf sip-4.19.13.tar.gz
-cd sip-4.19.13
+sudo tar xzf sip-4.19.19.tar.gz
+cd sip-4.19.19
 sudo python3 configure.py --sip-module PyQt5.sip
 sudo make
 sudo make install
