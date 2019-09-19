@@ -29,7 +29,7 @@ sudo make
 sudo make install
 
 # Return to repo dir.
-cd ~/plover-pi
+cd ~
 
 # Clone latest Plover repo.
 git clone git@github.com:openstenoproject/plover.git plover/
@@ -42,7 +42,7 @@ sudo usermod -a -G uucp pi
 sudo usermod -a -G dialout pi
 
 # Install Plover.
-pip3 install -r requirements.txt
+pip3 install --user -r requirements.txt
 
 # Install plugins.
-pip3 install -e . -r requirements_plugins.txt
+pip3 install --user -e . -r requirements_plugins.txt
