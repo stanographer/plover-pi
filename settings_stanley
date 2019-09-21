@@ -1,0 +1,8 @@
+[Machine Configuration]
+machine_type = Stenograph USB
+
+[System: English Stenotype]
+dictionaries = [{"enabled": false, "path": "~/dictionaries/stanespanol.json"}, {"enabled": true, "path": "~/dictionaries/stanplover.json"}, {"enabled": true, "path": "~/dictionaries/standeveloper.json"}, {"enabled": true, "path": "~/dictionaries/stanmain.json"}]
+
+[Output Configuration]
+undo_levels = 100

@@ -45,4 +45,9 @@ sudo usermod -a -G dialout pi
 pip3 install --user -r requirements.txt
 
 # Install plugins.
-pip3 install --user -e . -r requirements_plugins.txt
+pip3 install --user -e . -r requirements_plugins.txt --no-build-isolation
+
+# Remove req for dbus-python, replace with pydbus
+# pi3d.github.io/html/FAQ.html
+
+sudo pip3 install plover-stenograph-usb
