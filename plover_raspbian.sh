@@ -28,6 +28,9 @@ sudo python3 configure.py
 sudo make
 sudo make install
 
+# Remove native pyqt5.
+sudo apt remove python3-pyqt5
+
 # Return to repo dir.
 cd ~
 
@@ -37,7 +40,13 @@ git clone git@github.com:openstenoproject/plover.git plover/
 # Get into plover.
 cd plover
 
-sudo pip3 install pydbus
+# Remove req for dbus-python, replace with pydbus
+# pi3d.github.io/html/FAQ.html
+yes | cp -rf ~/plover-pi/requirements/requirements.txt ~/plover
+yes | cp -rf ~/plover-pi/requirements/requirements_plugins.txt ~/plover
+yes | cp -rf ~/plover-pi/requirements/requirements_plugins.txt ~/plover
+
+pip3 install pydbus
 sudo usermod -a -G uucp pi
 sudo usermod -a -G dialout pi
 
@@ -47,7 +56,11 @@ pip3 install --user -r requirements.txt
 # Install plugins.
 pip3 install --user -e . -r requirements_plugins.txt --no-build-isolation
 
-# Remove req for dbus-python, replace with pydbus
-# pi3d.github.io/html/FAQ.html
+# Personal plugins.
+pip3 install plover-stenograph-usb
+pip3 install plover-dict-commands
 
-sudo pip3 install plover-stenograph-usb
+# Executable permissions.
+sudo chmod +x launch.sh test.sh
+
+# /home/pi/.local/lib/python3.7/site-packages
