@@ -6,7 +6,7 @@ docutils==0.14
 pip==18.1
 plover-plugins-manager==0.5.13
 pycparser==2.19
-Pygments==2.2.0
+Pygments==2.7.4
 readme-renderer==24.0
 webencodings==0.5.1
 wheel==0.32.2
