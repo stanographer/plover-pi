@@ -1,6 +1,6 @@
 appdirs==1.4.3
 appnope==0.1.0; "darwin" in sys_platform
-certifi==2018.10.15
+certifi==2022.12.7
 pydbus; "linux" in sys_platform
 plyer==1.2.4; "win32" in sys_platform
 pyobjc-core==5.1.1; "darwin" in sys_platform
