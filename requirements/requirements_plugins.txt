@@ -9,7 +9,7 @@ pycparser==2.19
 Pygments==2.7.4
 readme-renderer==24.0
 webencodings==0.5.1
-wheel==0.32.2
+wheel==0.38.1
 # plover-treal
 hidapi==0.7.99.post21
 plover-treal==1.0.1
